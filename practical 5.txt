@@ -1,0 +1,20 @@
+//mayuri Motwani
+//22070521186
+# Subscribe to all disaster management topics for each sector
+mosquitto_sub -t "sector1/disaster/#" &
+mosquitto_sub -t "sector2/disaster/#" &
+mosquitto_sub -t "sector3/disaster/#" &
+
+# Subscribe to specific disaster management topics for facility heads
+mosquitto_sub -t "+/disaster/medical/facility_head" &
+mosquitto_sub -t "+/disaster/evacuation/facility_head" &
+mosquitto_sub -t "+/disaster/rescue/facility_head" &
+
+# Publish a disaster alert in sector1 related to medical emergency
+mosquitto_pub -t "sector1/disaster/medical/facility_head" -m "Medical Emergency in Sector 1"
+
+# Publish an evacuation order in sector2
+mosquitto_pub -t "sector2/disaster/evacuation/facility_head" -m "Evacuation Required in Sector 2"
+
+# Publish a rescue operation alert in sector3
+mosquitto_pub -t "sector3/disaster/rescue/facility_head" -m "Rescue Team Needed in Sector 3"
