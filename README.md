@@ -89,9 +89,3 @@ This repository contains a curated collection of hands-on experiments designed t
 ---
 
 
-## 📄 License
-
-This project is open-source and available under the [MIT License](LICENSE) for educational purposes.
-
----
-
