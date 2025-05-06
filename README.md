@@ -88,15 +88,6 @@ This repository contains a curated collection of hands-on experiments designed t
 - 🏫 **Section**: B
 ---
 
-## 🤝 Contributing
-
-Feel free to:
-- Report 🐞 bugs or issues  
-- Suggest 💡 improvements  
-- Add new 📁 practicals  
-- Enhance 📚 documentation  
-
----
 
 ## 📄 License
 
